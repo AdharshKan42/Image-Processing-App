@@ -1,0 +1,139 @@
+WELCOME!
+
+IMPORTANT NOTE CONCERNING SCRIPTS:
+-to supply the main class with a script input from a file, please input "-file [directory]"
+as the command line argument, where [directory] is the directory where the file is located
+
+TO BEGIN:
+TEXT VIEW:
+-run hw6.jar -text from a command prompt (to run our example script, cd into our res folder,
+ then do java -jar hw6.jar -file examplescriptcmd.txt; outputs will be saved to res/scriptoutputs)
+* if running from IntelliJ, please use -file res/examplescript.txt as the CLI, a difference in
+  directory prefix was necessary to run in IntelliJ vs. from a command prompt.
+** both of these processes will quit automatically when there are no more commands to be read
+
+GUI VIEW:
+-run hw6.jar from a command prompt
+
+GUI COMMANDS:
+LOADING AN IMAGE:
+-click open file
+-navigate to the directory where the target image is stored
+-double click on the image's file
+-voila
+
+SAVING AN IMAGE:
+-click save file
+-navigate to the directory where you would like to save your creation
+-enter a name and extension for the image
+-voila
+
+FLIPPING HORIZONTALLY/VERTICALLY/BLURRING/SHARPENING/APPLYING SEPIA FILTER:
+-press the corresponding button
+-voila
+
+CHANGING BRIGHTNESS:
+-press the change brightness button
+-enter the increment you would like to brighten/darken the image by (max 255, min -255)
+-press enter
+-voila
+
+GREYSCALING:
+-press the greyscale button
+-choose the component of the image you would like to visualize
+-voila
+
+DOWNSCALING:
+-press the downscale button
+-enter a new width for the image and press enter
+-enter a new height for the image and press enter
+-voila
+
+TEXT COMMANDS:
+*: denotes a command that can only be performed after loading an image, referencing
+   the name given to the load command as the program's name for the image
+
+load [image directory] [program's name for image]
+e.g. load res/redwood.png redwood
+(loads the image located at the directory res/redwood.png and keeps track of it
+in the program under the moniker "redwood")
+
+* save [image directory] [program's name for image]
+e.g. save res/redwood.png redwood
+(saves the image the program refers to as "redwood" to the directory res/redwood.png)
+
+* red-component [program's name for image] [program's name for generated image]
+e.g. red-component redwood redwood-red
+(generates a greyscale image using the red component of "redwood" and stores it in the
+model under the name "redwood-red")
+
+* green-component [program's name for image] [program's name for generated image]
+e.g. green-component redwood redwood-green
+(generates a greyscale image using the green component of "redwood" and stores it in the
+model under the name "redwood-green")
+
+* blue-component [program's name for image] [program's name for generated image]
+e.g. blue-component redwood redwood-blue
+(generates a greyscale image using the blue component of "redwood" and stores it in the
+model under the name "redwood-blue"
+
+* value-component [program's name for image] [program's name for generated image]
+e.g. value-component redwood redwood-value
+(generates a greyscale image using the value component of "redwood" and stores it in the
+model under the name "redwood-value")
+
+* intensity-component [program's name for image] [program's name for generated image]
+e.g. intensity-component redwood redwood-intensity
+(generates a greyscale image using the intensity component of "redwood" and stores it in the
+model under the name "redwood-intensity")
+
+* luma-component [program's name for image] [program's name for generated image]
+e.g. luma-component redwood redwood-luma
+(generates a greyscale image using the luma component of "redwood" and stores it in the
+model under the name "redwood-luma")
+
+* horizontal-flip [program's name for image] [program's name for generated image]
+e.g. horizontal-flip redwood redwood-horizontal
+(generates an image that is "redwood," but flipped horizontally and stores it in the
+model under the name "redwood-horizontal")
+
+* vertical-flip [program's name for image] [program's name for generated image]
+e.g. vertical-flip redwood redwood-vertical
+(generates an image that is "redwood," but flipped vertically and stores it in the
+model under the name "redwood-vertical")
+
+* brighten [increment] [program's name for image] [program's name for generated image]
+e.g. brighten 10 redwood redwood-brighter
+(generates an image that is "redwood," but with each component brightened by an
+increment of 10, and stores it in the model as "redwood-brighter")
+
+* darken [increment] [program's name for image] [program's name for generated image]
+e.g. darken 10 redwood redwood-darker
+(generates an image that is "redwood," but with each component darkened by an
+increment of 10, and stores it in the model as "redwood-darker")
+
+* transform-sepia [program's name for image] [program's name for generated image]
+e.g. transform-sepia redwood redwood-sepia
+(generates an image that is "redwood," but with a sepia transformation applied to it 
+and stores it in the model as "redwood-sepia")
+
+* transform-greyscale [program's name for image] [program's name for generated image]
+e.g. transform-greyscale redwood redwood-greycale
+(generates an image that is "redwood," but with a greyscale transformation applied to 
+it and stores it in the model as "redwood-greyscale")
+
+* filter-blur [program's name for image] [program's name for generated image]
+e.g. filter-blur redwood redwood-blur
+(generates an image that is "redwood," but with a blur filter applied to 
+it and stores it in the model as "redwood-blur")
+
+* filter-sharpen [program's name for image] [program's name for generated image]
+e.g. filter-sharpen redwood redwood-sharp
+(generates an image that is "redwood," but with a sharpening filter applied to 
+it and stores it in the model as "redwood-sharp")
+
+* downscale [new width] [new height] [program's name for image] [program's name for generated image]
+note: does nothing if you try to upscale
+e.g. downscale 100 100 redwood redwood100
+(generates an image that is "redwood," but with its size reduced to 100px by 100px, and refers
+to it locally in the program as "redwood100"
