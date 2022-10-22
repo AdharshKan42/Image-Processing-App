@@ -1,0 +1,34 @@
+load redwood.png redwood
+red-component redwood redwood-red
+green-component redwood redwood-green
+blue-component redwood redwood-blue
+value-component redwood redwood-value
+intensity-component redwood redwood-intensity
+luma-component redwood redwood-luma
+horizontal-flip redwood redwood-horizontal-flip
+vertical-flip redwood redwood-vertical-flip
+brighten 70 redwood redwood-brighten-70
+darken 70 redwood redwood-darken-70
+transform-sepia redwood redwood-sepia
+transform-greyscale redwood redwood-grey
+filter-blur redwood redwood-blur
+filter-sharpen redwood redwood-sharpen
+save scriptoutputs/redwood.png redwood
+save scriptoutputs/redwood.bmp redwood
+save scriptoutputs/redwood.ppm redwood
+save scriptoutputs/redwood.jpg redwood
+save scriptoutputs/redwood-red.png redwood-red
+save scriptoutputs/redwood-green.png redwood-green
+save scriptoutputs/redwood-blue.png redwood-blue
+save scriptoutputs/redwood-value.png redwood-value
+save scriptoutputs/redwood-intensity.png redwood-intensity
+save scriptoutputs/redwood-luma.png redwood-luma
+save scriptoutputs/redwood-horizontal-flip.png redwood-horizontal-flip
+save scriptoutputs/redwood-vertical-flip.png redwood-vertical-flip
+save scriptoutputs/redwood-brighten-70.png redwood-brighten-70
+save scriptoutputs/redwood-darken-70.png redwood-darken-70
+save scriptoutputs/redwood-sepia.png redwood-sepia
+save scriptoutputs/redwood-grey.png redwood-grey
+save scriptoutputs/redwood-blur.png redwood-blur
+save scriptoutputs/redwood-sharpen.png redwood-sharpen
+
